@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Logged Out{% endblock title %}
+
+{% block bontent %}
+<div style="border: 1px solid black; display: flex; flex-direction: column; justify-content: center; width: 55%; margin-left: auto; margin-right: auto;">
+    <p>Click <a href="{% url 'article_list' %}">here</a> to see the latest articles.</p>
+    <p>Click <a href="{% url 'login' %}">here</a> to log back in.</p>
+</div>
+{% endblock content %}
